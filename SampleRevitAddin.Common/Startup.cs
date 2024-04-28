@@ -18,6 +18,22 @@ namespace SampleRevitAddin.Common
         {
             return Result.Succeeded;
         }
+        /*
+         缺点
+            项目多，带来成倍的数量 给管理带来不便
+            共享项目 codemaid无法显示代码结构
+            想指定版本编译时不方便。 需要来回卸载、加载项目
+            无法适应复杂的框架
+
+            简单的小项目可以使用上述框架管理
+
+         优点
+            CI/CD持续构建，在线下载安装包
+
+         改进的
+            使用.net sdk 多版本
+            CI/CD加入自动化测试
+         */
 
         public Result OnStartup(UIControlledApplication application)
         {
